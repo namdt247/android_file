@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void onReadExternal() {
-        File file = new File(FILE_NAME+FILE_PATH);
+        File file = new File(FILE_PATH+FILE_NAME);
         try {
             FileInputStream fis = new FileInputStream(file);
             BufferedReader reader = new BufferedReader(new InputStreamReader(fis));
